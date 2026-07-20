@@ -27,7 +27,7 @@ jobs:
         uses: ansible/ansible-lint@v26
 
       - name: Set up Python 3.
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -59,7 +59,7 @@ jobs:
           path: ./code/ansible_collections/nextcloud/admin/
           fetch-depth: 0
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -107,7 +107,7 @@ jobs:
           path: "nextcloud.ansible-collection-nextcloud-admin"
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
